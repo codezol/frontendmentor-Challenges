@@ -7,8 +7,7 @@ body{
     background-color: hsl(220, 15%, 55%);  
 }
 .main {
-    height: 650px;
-    width: 385px;
+    width: 270px;
     background-color: hsl(0, 0%, 100%);
     position: absolute;
     top:50%;
