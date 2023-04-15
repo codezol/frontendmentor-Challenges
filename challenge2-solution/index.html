@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>age calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="input-form">
+            <form>
+                <div>
+                    <label for="days">Day</label>
+                    <input type="text" id="days-input" class="days-input" placeholder="DD">
+                    <span class="invalid">this filed is required</span>
+                </div>
+                <div>
+                    <label for="months">Month</label>
+                    <input type="text" id="months-input" class="months-input" placeholder="MM">
+                    <span class="invalid">this filed is required</span>
+                </div>
+                <div>
+                    <label for="years">Year</label>
+                    <input type="text" id="years-input" class="years-input"placeholder="YYYY">
+                    <span class="invalid">this filed is required</span>
+                </div>
+                <div class="arrow"></div>
+
+              
+                
+            </form>
+
+        </div>
+        <div class="output">
+           <div>
+            <span class="years">- -</span><h1>years</h1>
+           </div>
+           <div>
+            <span class="months">- -</span><h1>months</h1>
+           </div>
+            
+           <div>
+            <span class="days">- -</span><h1>days</h1>
+           </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
