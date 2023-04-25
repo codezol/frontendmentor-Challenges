@@ -392,9 +392,12 @@ footer .links {
 .links h6:hover{
     color: hsl(0, 94%, 66%);
 }
-.links div {
+.links  {
     display: flex;
-    margin-right: 30%;
+    margin-right: 17%;
+}
+.links svg {
+    margin-right:20px;
 }
 @media screen and (max-width:480px){
     .container{
