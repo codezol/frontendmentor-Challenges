@@ -396,6 +396,8 @@ footer .links {
     display: flex;
     margin-right: 17%;
 }
+.links div{
+    display:flex;
 .links svg {
     margin-right:20px;
 }
