@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles.css">
+    <title>intro-section-with-dropdown-navigation-main</title>
+</head>
+<body class="dark">
+    <header class="flex ">
+        <div class="logo"></div>
+        <div class="dark-menu display-none"></div>
+        <div class="show-menu"><img src="../images/icon-menu.svg" alt=""></div>
+       <nav class="flex  display-none space-between">
+            <div class="close-menu display-none"><img src="../images/icon-close-menu.svg" alt=""></div>
+            <ul class="flex">
+                <li class="Features flex flex-direction-column">
+                    <div class="flex">
+                        Features
+                        <div class="Arrows">
+                            <img class="Arrow-down"src="../images/icon-arrow-down.svg" alt="Arrow-down">
+                            <img class="Arrow-up"src="../images/icon-arrow-up.svg" alt="Arrow-up">
+                        </div>
+                    </div>
+                    <ul>
+                        <li><img src="../images/icon-todo.svg" alt="todo"><a href="#">Todo List</a></li>
+                        <li><img src="../images/icon-calendar.svg" alt="calender"><a href="#">Calender</a></li>
+                        <li><img src="../images/icon-reminders.svg" alt="reminders"><a href="#">Reminders</a></li>
+                        <li><img src="../images/icon-planning.svg" alt="planing"><a href="#">Planing</a></li>
+                    </ul>
+                </li>
+                <li class="Company flex flex-direction-column">
+                        <div class="flex">
+                            Company
+                            <div class="Arrows">
+                                <img class="Arrow-down" src="../images/icon-arrow-down.svg" alt="Arrow-down">
+                                <img class="Arrow-up" src="../images/icon-arrow-up.svg" alt="Arrow-up">
+                            </div>
+                        </div>
+                    <ul>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="buttons flex">
+                <button class="with-out-border"><a href="#">Login</a></button>
+                <button class="border"><a href="#">Register</a></button>
+            </div>
+       </nav>
+    </header>
+    <main class="flex space-around">
+        <article class="flex flex-direction-column space-between text-align-center">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location.
+            Streamline processes, create team rituals, and
+            watch productivity soar</p>
+            <button>learn more</button>
+            <div class="flex">
+                <img src="../images/client-databiz.svg" alt="databiz">
+                <img src="../images/client-audiophile.svg" alt="audiophile">
+                <img src="../images/client-meet.svg" alt="meet">
+                <img src="../images/client-maker.svg" alt="maker">
+                
+            </div>
+        </article>
+        <aside>
+            <img class="desktop" src="../images/image-hero-desktop.png" alt="">
+            <img class="mobile" src="../images/image-hero-mobile.png" alt="">
+        </aside>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

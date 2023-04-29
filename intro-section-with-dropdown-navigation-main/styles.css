@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    margin-top: 10px;
+    font-size: 18px;
+}
+.mobile,.show-menu,.close-menu{
+    display: none;
+}
+nav {
+    width: 100%;
+}
+.logo {
+    background-image: url('../images/logo.svg');
+    width: 20vh;
+    height: 5vh;
+    background-repeat: no-repeat;  
+    margin-left: 5px;
+    margin-right: 20px;
+}
+a{
+    color: #000;
+}
+.buttons button{
+    background-color: transparent;
+    font-size: 16px;
+    margin-right: 20px;
+    height: fit-content;
+    padding: 10px 20px;
+}
+.border {
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.with-out-border {
+    border: none;
+}
+.buttons{
+    margin-top: -11px;
+}
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+nav ul li {
+    margin: 0 10px;
+}
+.Features ul, .Company ul{ 
+    flex-direction: column;   
+    display: none;
+    background-color: #fff;
+    box-shadow: 1px 3px 30px #d7d6d6;
+    border-radius: 10px;
+    padding: 10px 30px;    
+    position: fixed;
+    
+}
+.Features ul {
+    top: 8%;
+    left: 8.5%;
+}
+.Arrow-up{
+    display: none;
+}
+.Company ul {
+    top: 8%;
+    left: 20%;
+    line-height: 1.6rem;
+}
+.Features ul li , .Company ul li {
+    margin: 10px auto;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.Features div img,.Company div img {
+    width: 0.6rem;
+    height: 0.5rem;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.Features li img, .Company li img {
+    margin-right: 10px;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+aside .desktop{
+    width: 25rem;
+    height: 35rem;
+}
+aside img {
+    margin-top: 3.7rem;
+}
+article{
+    margin-top: 8rem;
+    margin-left: 4.8rem;
+}
+article h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    line-height: 5rem;
+}
+article p {
+    font-size: 1.25rem;
+    color: #727171;
+    line-height: 1.85rem;
+}
+article button {
+    font-size: 18px;
+    border: 2px solid black;
+    padding: 15px 30px;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+    /* margin-top: 3rem; */
+}
+article button:hover {
+        background-color: #000;
+        color: #fff;
+        
+}
+
+article div img{
+    width: 6rem;
+    height: 1.7rem;
+}
+
+@media screen and (max-width : 520px){
+    .desktop{
+        display: none;
+    }
+    .mobile,.show-menu{
+        display: block;
+        max-width: 100%;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+    .display-none {
+        display: none;
+    }
+    .text-align-center{
+        text-align: center;
+    }
+    article {
+        margin-left: 0;
+    }
+    article h1 {
+        font-size: 3rem;
+    }
+    article p {
+        width: 85%;
+        margin-inline: auto;
+    }
+    article button{
+        
+        margin-inline: auto;
+        
+    }
+    article div{
+        justify-content: space-around;
+        padding-bottom: 5rem;
+        padding-top: 1.5rem;
+    }
+    article div img{
+        width: 4.2rem;
+        height: 1.2rem;
+    }
+    nav {
+        flex-direction: column;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #fff;
+        font-size: 1.35rem;
+
+    }
+    .dark-menu{
+        width: 30%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    nav > ul {
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+    .Features ul, .Company ul{
+        box-shadow:none;
+        position: initial;
+    }
+    nav .buttons {
+        padding-top: 1rem;
+        flex-direction: column;
+        width: 80%;
+        margin-inline: auto;
+    }
+    nav .buttons button a {
+        font-size: 1.1rem;
+    }
+    .Features .Arrows {
+        margin-left: 10px;
+    }
+    header img{
+        margin-right: 20px;
+    }
+    .close-menu {
+        text-align: right;
+        margin-top: 20px;
+    }
+    header {
+        justify-content: space-between;
+    }
+}
